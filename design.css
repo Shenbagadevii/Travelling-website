@@ -1,0 +1,751 @@
+:root{
+    --color:orange;
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-evenly;
+    position: sticky;
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 0px black;
+    
+}
+.nav_name a{
+    margin-left: 30px;
+    text-decoration: none;
+}
+.nav_name span{
+    background-color: var(--color);
+    color: white;
+    padding:5px;
+    margin-left: 10px;
+    border-radius: 20px;
+
+}
+.nav a:hover{
+    color:var(--color) ;
+    
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.head h1{
+    align-items: center;
+}
+.head h1 img{
+    width: 70px;
+    height: 40px;
+}
+.head a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+.head span{
+    color: var(--color);
+    margin-right: 20px;
+}
+select{
+    border: none;
+    color: rgb(58, 6, 106);
+    font-size: 15px;
+}
+.fa-suitcase{
+    color: rgb(66, 8, 119);
+}
+fieldset{
+    width: 200px;
+    padding: 5px;
+}
+.content{
+    padding-top: 20px;
+    background-color: var(--color);
+    padding-bottom: 10px;
+}
+.sec1{
+    background-color: white;
+     margin: 10px 100px 20px 100px;
+     padding: 40px;
+     box-shadow: 0px 0px 10px 0px black;
+     border-radius: 20px;
+     
+}
+.type {
+    display: flex;
+   margin-left: 40px;
+    gap: 20px;
+   
+}
+.content h2{
+    color: white;
+    text-align: center;
+}
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  
+}
+.form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 100px 20px 100px;
+    gap: 10px;
+    
+}
+button {
+    padding: 15px;
+    margin-left: 500px;
+    background-color: var(--color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+.offers{
+     margin: 10px 100px 90px 100px;
+   
+}
+.offers h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.next{
+    display: flex;
+    gap: 60px;
+}
+.card{
+    width: 600px;
+    height: 200px;
+    animation-play-state: running;
+    animation: slide 3s linear infinite;
+}
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+.limited{
+    color: red;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.down{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 80px 20px 80px;
+}
+.down h2{
+    color: var(--color);
+}
+.product, .about, .essential, .links{
+    margin-top: 50px;
+    
+}
+
+.line{
+  
+    border: 1px solid;
+     margin-left: 20px;
+     margin-right: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+     margin: 40px 80px 20px 80px;
+}
+.app img{
+    width: 400px;
+    height: 50px;
+}
+.fa-instagram,.fa-x-twitter,.fa-youtube{
+    font-size: 30px;
+}
+
+.image img{
+    width: 400px;
+    height: 50px;
+}
+/* Hotel--> */
+
+.hotelsearch{
+    margin-top: 30px;
+    width: 12%;
+}
+.destination{
+       margin: 40px 80px 20px 80px;
+}
+.areas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    text-align: center;
+    margin: 20px;
+}  
+
+.box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+} 
+.box4{
+    grid-column: span 2;
+}
+.box7{
+    grid-column: span 2;
+}
+/* Train -->*/
+.heading{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.heading h2 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    padding-top: 3px;
+}
+.ticket{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.tatkal{
+    background-color: rgba(119, 136, 153, 0.205);
+    border-radius: 20px;
+    padding: 10px;
+}
+.tatkal h6{
+   background-color: rgba(0, 128, 0, 0.768);
+   color: white;
+   border-radius: 20px;
+   padding: 2px;
+   text-align: center;
+}
+
+.trains{
+    margin-top: 20px;
+}
+.between{
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 10%;
+    color: black;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+.cancel,.confirm,.upi{
+    display: flex;
+}
+.fa-xmark,.fa-train-subway,.fa-indian-rupee-sign{
+    background-color:rgb(150, 211, 233);
+    margin-top: 10px;
+    border-radius: 20px;
+    color: rgb(14, 114, 153);
+    font-size: 32px;
+    padding: 8px;
+    margin-right: 10px;
+}
+.settings{
+      margin: 90px 80px 20px 80px;
+}
+.set{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+.irctc{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid lightgray;
+    color: rgb(68, 45, 144);
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: white;
+}
+.fa-greater-than{
+  
+  font-size: 10px;
+}
+.irctc img{
+    width: 30px;
+    height: 30px;
+}
+.route{
+    border: 2px solid;
+    padding:20px;
+    margin-top: 20px;
+}
+.root{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.root .fa-train{
+     color: grey;
+}
+.root span{
+    color: grey;
+}
+.root p{
+    color: rgb(68, 45, 144);
+    margin-bottom: 10px;
+}
+/* cab */
+.sec2{
+    background-color: white;
+     margin: 10px 100px 0px 100px;
+     padding-left: 30px;
+     padding-bottom: 0px;
+     box-shadow: 0px 0px 10px 0px black;
+     border-radius: 20px;
+    display: flex;
+  
+}
+.time{
+    display: flex;
+    gap: 100px;
+}
+.toproot {
+    width: 90%;
+     border: 2px solid;
+     padding: 10px;
+     margin: 40px 100px 30px 100px;
+ } 
+.cab{
+   
+    background-color: var(--color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+   margin-left: 120px;
+}
+.inputs-cab{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 60%;
+}
+.inputs-cab input{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+
+}
+.imagee{
+  width: 40%;
+  
+}
+.imagee:hover{
+    transform: translate(-30%);
+}
+
+.first h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cabi,.cabi2{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(23, 6, 77);
+    margin-left: 10px;
+}
+.toproot h2{
+    text-align: center;
+}
+/* Laptop size*/
+@media screen and (max-width:1024px){
+    .inputs{
+        flex-direction: column;
+     
+    }
+    .inputs input{
+      width: 700px;
+    }
+    fieldset{
+    width: 740px;
+    padding: 15px;
+    margin-bottom: 10px;
+    }
+    .form {
+      margin: 10px 100px 20px 10px;
+    }
+    button{
+        margin-left: 10px;
+    }
+    .next{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ 
+    }
+
+    .card{
+    width: 200px;
+    height: 200px;
+    animation-play-state: running;
+    animation: slide 3s linear infinite;
+    }
+
+    footer{
+    display: flex;
+    justify-content: space-between;
+     margin: 40px 50px 20px 80px;
+    }
+  
+.app img{
+    width: 200px;
+    height: 50px;
+}
+.fa-instagram,.fa-x-twitter,.fa-youtube{
+    font-size: 20px;
+}
+
+.image img{
+    width: 200px;
+    height: 50px;
+}
+.details{
+    margin: 20px;
+    text-align: center;
+}
+.details h1{
+    font-size: 15px;
+    color: rgb(63, 63, 119);;
+}
+.details p{
+    display: none;
+}
+.fa-xmark,.fa-train-subway,.fa-indian-rupee-sign{
+    background-color:white;
+ 
+    color: black;
+    font-size: 20px;
+
+    margin-right: 10px;
+}
+.set{
+    flex-direction: column;
+    width: 50%;
+    margin-left: 50px;
+}
+.irctc{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid lightgray;
+    color: rgb(68, 45, 144);
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: white;
+}
+.irctc i{
+    display: none;
+}
+.irctc img{
+    width: 40px;
+    height: 40px;
+}
+.tatkal input{
+        width: 50px;
+    }
+.time{
+    display: flex;
+    gap: 50px;
+}
+.inputs-cab{
+    width: 40%;
+}
+.imagee{
+  width: 60%;
+  
+}
+.imagee:hover{
+    transform: none;
+}
+.toproot{
+    margin-left: 55px;
+}
+}
+
+/* Tablet size */
+@media screen and (max-width:768px){
+.inputs input{
+        width: 450px;
+}
+fieldset{
+    width: 500px;
+}
+.head {
+    font-size: 0px;
+    
+}
+.head i{
+    font-size: 15px;
+}
+ button{
+        margin-left: 100px;
+ }
+ .next{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+    .card{
+    width: 200px;
+    height: 200px;
+    animation-play-state: running;
+    animation: slide 3s linear infinite;
+    }
+    footer{
+        gap: 30px;
+    }
+    .fa-instagram,.fa-x-twitter,.fa-youtube{
+    font-size: 13px;
+    }
+    .app img{
+        width: 200px;
+        height: 30px;
+    }
+    .hotelsearch{
+           width: 20%;
+    }
+    .areas{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    text-align: center;
+    margin: 20px;
+}  
+
+.box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+} 
+.box1{
+    grid-row: span 1;
+}
+.box4{
+    grid-column: span 1;
+}
+.box5{
+    grid-column: span 2;
+}
+.box7{
+    grid-column: span 1;
+}
+.box10{
+    grid-column: span 2;
+}
+.essential{
+    display: none;
+}
+.tatkal input{
+    width: 12%;
+}
+.route{
+    margin-left: 10px;
+}
+.root{
+    font-size: 10px;
+    font-weight:normal;
+    color:rgb(68, 45, 144);
+}
+.root p{
+    display: none;
+}
+.cab{
+    margin-bottom: 10px;
+    width: 150px;
+}
+.imagee{
+    display: none;
+}
+.toproot{
+    font-size: 12px;
+}
+}
+
+/* Mobile screen */
+@media screen and (max-width:368px){
+.nav_name{
+    display: none;
+}
+.inputs input{
+        width: 150px;
+}
+fieldset{
+    width: 200px;
+}
+.head {
+    font-size: 0px;
+    
+}
+.head i{
+    font-size: 15px;
+}
+ button{
+        margin-left: 30px;
+       padding: 8px;
+ }
+ .offers{
+     margin: 10px 5px 90px 30px;
+}
+.next{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.down .product{
+    display: none;
+}
+.type {
+    margin-left: 10px;
+}
+.sec1{
+    margin: 10px 30px 20px 30px;     
+}
+.form{
+  display: block;
+  width: 100%;
+}
+.form .fa-plus{
+ display: none;
+}
+footer .follow,.image{
+    display: none;
+}
+footer{
+    display: block;
+     margin: 20px 20px 20px 20px;
+}
+.app img{
+    width: 250px;
+    height: 50px;
+}
+.content h2{
+    font-size: 13px;
+}
+fieldset select{
+    font-size: 10px;
+}
+.hotelsearch{
+    width: 60%;
+}
+ .areas{
+    display: block;
+    margin: 0px 0px 10px 0px;
+ }
+ .destination{
+    margin:0px 0px 10px 10px;
+ }
+ .destination h2{
+    font-size: 15px;
+ }
+ .destination p{
+    font-size: 12px;
+    margin-bottom: 10px;
+ }
+.box img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.heading h2{
+    font-size: 10px;
+}
+.heading .book{
+    display: none;
+}
+.sec1 .type{
+    font-size: 10px;
+}
+.ticket{
+    display: block;
+  margin-top: 30px;
+}
+.ticket .tatkal{
+    text-align: center;
+      margin-bottom: 30px;
+}
+.details{
+    display: block;
+}
+.settings{
+      margin:0px 0px 0px 20px;
+}
+.irctc{
+    width: 100%;
+}
+.irctc img{
+    width: 40%;
+}
+.route{
+    display: none;
+}
+.sec2{
+     margin: 10px 10px 0px 10px;
+}
+.time{
+    display: block;
+}
+.cab{
+    width: 100%;
+    margin: 0px 0px 10px 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+.imagee{
+    display: none;
+}
+.toproot{
+     margin: 20px 20px 20px 20px;
+     font-size: 10px;
+}
+.down{
+    display: none;
+}
+}
